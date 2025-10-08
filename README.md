@@ -1,3 +1,4 @@
+![Birthday XP](birthday-xp/birthday_xp.svg)<br>
 <img src="https://capsule-render.vercel.app/api?type=waving&color=00D735&height=100&section=header"/>
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&duration=3000&pause=1000&color=00D735&center=true&vCenter=true&width=200&lines=Hi%2C+I+am+Manahil%21" alt="Typing SVG" /><br>
 I’m a Research Assistant working in neurocomputation, EEG signal processing, and analysis. My work explores how machine learning and neuroscience can intersect to better understand brain activity and behavior. Outside the lab, I’m an artist who enjoys experimenting across different mediums, an avid fan of horror media, anime and video games.
