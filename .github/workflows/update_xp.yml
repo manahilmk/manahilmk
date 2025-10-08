@@ -2,7 +2,8 @@ name: Update Birthday XP
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # daily at midnight UTC
+    # Runs daily at 1:30 AM PKT (20:30 UTC previous day)
+    - cron: '30 20 * * *'
   workflow_dispatch:     # allows manual run
 
 jobs:
