@@ -1,0 +1,33 @@
+name: Update Birthday XP
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # daily at midnight UTC
+  workflow_dispatch:     # allows manual run
+
+jobs:
+  update-xp:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: pip install --upgrade pip
+
+    - name: Generate SVG
+      run: python birthday-xp/birthday_xp.py
+
+    - name: Commit and push changes
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git add birthday-xp/birthday_xp.svg
+        git commit -m "Update birthday XP bar" || echo "No changes to commit"
+        git push
